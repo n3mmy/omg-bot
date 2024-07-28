@@ -10,7 +10,7 @@ TOKEN = config.token
 
 class Bot(commands.Bot):
     def __init__(self):
-        super().__init__(command_prefix="o!", intents=discord.Intents.all())
+        super().__init__(command_prefix="omg.admin ", intents=discord.Intents.all())
 
     async def startup(self):
         bot.owner_ids = [1178498830505885787]
@@ -31,8 +31,6 @@ class Bot(commands.Bot):
                     print(f"[ERROR] {e}")
         self.loop.create_task(self.startup())
 
-
 bot = Bot()
-
 
 bot.run(TOKEN)

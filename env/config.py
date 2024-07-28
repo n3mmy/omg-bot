@@ -12,3 +12,7 @@ class Config():
     @property
     def token(self) -> str:
         return str(self.config['TOKEN']['TOKEN'])
+
+    @property
+    def owner(self) -> str:
+        return str(self.config['OWNER']['OWNER'])
